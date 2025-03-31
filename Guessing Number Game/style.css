@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Winky Sans';
+   background-color:#383B43;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color:#967046;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  border-radius: 8px;
+  padding: 16px 16px 64px 16px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+}
+.container p {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.userInput {
+    width: 100%;
+    max-width: 150px;
+    padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  margin-inline: 60px;
+}
+
+
+.displayOutput {
+  margin: 10px 0px;
+}
+.guessDisplay,
+.displayOutput {
+  font-size: 1px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.btn-div {
+  display: flex;
+  margin-top: 16px;
+  
+}
+.submit-btn-sty {
+  width: 100%;
+  color: #ecf0f1;
+  border-radius: 5px;
+  border: solid 1px #f80404;
+  background: hwb(0 4% 44%);
+  font-size: 1em;
+  margin: 12px;
+  font-size: 1em;
+  margin-right: 100px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #d30000;
+  -moz-box-shadow: 0px 6px 0px #d30000;
+  box-shadow: 0px 6px 0px #320303;
+}
+
+.submit-btn-sty:active {
+  -webkit-box-shadow: 0px 2px 0px #d30000;
+  -moz-box-shadow: 0px 2px 0px #d30000;
+  box-shadow: 0px 2px 0px #d30000;
+  position: relative;
+  top: 4px;
+}
+
+.start-btn-sty {
+  position: relative;
+  width: 100%;
+  color: #ecf0f1;
+  border-radius: 5px;
+  border: solid 1px #1df804;
+  background: hwb(121 4% 44%);
+  font-size: 1em;
+  margin: 12px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px hwb(121 4% 44%);
+  -moz-box-shadow: 0px 6px 0px hwb(121 4% 44%);
+  box-shadow: 0px 6px 0px hwb(121 4% 44%);
+}
+
+.start-btn-sty:active {
+  -webkit-box-shadow: 0px 2px 0px hwb(121 4% 44%);
+  -moz-box-shadow: 0px 2px 0px hwb(121 4% 44%);
+  box-shadow: 0px 2px 0px hwb(121 4% 44%);
+  position: relative;
+  top: 4px;
+}
+
+.newGameStart:disabled{
+    cursor:not-allowed ;
+}
+
+@media(max-width:500px){
+  .container{
+    max-width: 360px;
+  }
+}

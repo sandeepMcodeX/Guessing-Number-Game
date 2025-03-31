@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guessing Number Game</h1>
+        <p>Enter a guess between 0 to 100 </p>
+        <form>
+
+            <input type="number" min="0" max="100" class="userInput" placeholder="Enter the Number" required>
+
+            <div class="btn-div">
+                <input class="sumbitButton submit-btn-sty" type="submit" required></button>
+                <button class="newGameStart start-btn-sty" type="button" disabled>Start Game</button>
+            </div>
+        </form>
+
+
+        <div>
+            <p class="displayOutput"></p>
+            <p class="guessDisplay"></p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
